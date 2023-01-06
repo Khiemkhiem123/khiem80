@@ -7,8 +7,6 @@ read -p " NODE ID 1: " node_id1
   read -p " CertDomain: " CertDomain
   [ -z "${CertDomain}" ] && CertDomain="vn.4gviet.com"
   
-  cd /etc/XrayR
-  
   cat >config.yml <<EOF
   Log:
   Level: warning # Log level: none, error, warning, info, debug 
