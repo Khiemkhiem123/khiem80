@@ -75,7 +75,7 @@ Nodes:
         DNSEnv: # DNS ENV option used by DNS provider
           ALICLOUD_ACCESS_KEY: aaa
           ALICLOUD_SECRET_KEY: bbb
-  EOF
+EOF
 sed -i "s|NodeID1:.*|NodeID: ${node_id1}|" ./config.yml
 sed -i "s|DeviceLimit1:.*|DeviceLimit: ${DeviceLimit}|" ./config.yml
 sed -i "s|CertDomain1:.*|CertDomain: \"${CertDomain}\"|" ./config.yml
